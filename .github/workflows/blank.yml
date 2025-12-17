@@ -27,8 +27,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: wget minecraft
-        run: wget https://apps.microsoft.com/detail/9nblggh4r2r6 -o mincradft.zip
+        run: |
+          wget aka.ms/downloadmee -o mee.html
         
       - uses: actions/upload-artifact@v4
         with:
-          path: mincradft.zip
+          path: mee.html
